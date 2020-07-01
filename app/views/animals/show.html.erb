@@ -1,0 +1,6 @@
+<h1><%= @animal.name %></h1>
+<p>Size: <%= @animal.size %></p>
+<p>Number of legs: <%= @animal.number_of_legs %></p>
+<p><%= @animal.fluffy ? "This is one fluffy boi" : "Not for petting" %>
+<br/>
+<%= link_to "Go back to every animal", animals_path %>

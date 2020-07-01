@@ -1,0 +1,9 @@
+<h1>WELCOME TO MY ZOO</h1>
+<p>Please sign a waiver</p>
+
+<marquee><h3>Behold our animals</h3></marquee>
+<ul>
+<% @animals.each do |animal| %>
+    <li><%= link_to animal.name, animal_path(animal.id) %></li>
+<% end %>
+</ul>
